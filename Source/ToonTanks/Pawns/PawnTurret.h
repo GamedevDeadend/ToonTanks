@@ -34,5 +34,5 @@ class TOONTANKS_API APawnTurret : public APawnBase
 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	
+
 };
