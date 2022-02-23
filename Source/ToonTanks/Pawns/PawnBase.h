@@ -40,6 +40,4 @@ protected:
 	virtual void HandleDestruction();
 
 
-
-
 };

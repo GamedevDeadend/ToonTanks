@@ -5,7 +5,7 @@
 			"name": "ToonTanks (Debug)",
 			"request": "launch",
 			"preLaunchTask": "ToonTanks Win64 Debug Build",
-			"program": "D:\\Games Repos\\ToonTanks-76998434bc120d34002bb2bf0ed8a54f3ef60173\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"program": "D:\\Games Repos\\ToonTanks\\Binaries\\Win64\\UE4-Win64-Debug.exe",
 			"args": [
 			],
 			"cwd": "F:\\UE_4.27",
@@ -18,7 +18,7 @@
 			"name": "ToonTanks (DebugGame)",
 			"request": "launch",
 			"preLaunchTask": "ToonTanks Win64 DebugGame Build",
-			"program": "D:\\Games Repos\\ToonTanks-76998434bc120d34002bb2bf0ed8a54f3ef60173\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"program": "D:\\Games Repos\\ToonTanks\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
 			"args": [
 			],
 			"cwd": "F:\\UE_4.27",
@@ -31,7 +31,7 @@
 			"name": "ToonTanks (Development)",
 			"request": "launch",
 			"preLaunchTask": "ToonTanks Win64 Development Build",
-			"program": "D:\\Games Repos\\ToonTanks-76998434bc120d34002bb2bf0ed8a54f3ef60173\\Binaries\\Win64\\UE4.exe",
+			"program": "D:\\Games Repos\\ToonTanks\\Binaries\\Win64\\UE4.exe",
 			"args": [
 			],
 			"cwd": "F:\\UE_4.27",
@@ -44,7 +44,7 @@
 			"name": "ToonTanks (Shipping)",
 			"request": "launch",
 			"preLaunchTask": "ToonTanks Win64 Shipping Build",
-			"program": "D:\\Games Repos\\ToonTanks-76998434bc120d34002bb2bf0ed8a54f3ef60173\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"program": "D:\\Games Repos\\ToonTanks\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
 			"args": [
 			],
 			"cwd": "F:\\UE_4.27",
@@ -57,7 +57,7 @@
 			"name": "ToonTanks (Test)",
 			"request": "launch",
 			"preLaunchTask": "ToonTanks Win64 Test Build",
-			"program": "D:\\Games Repos\\ToonTanks-76998434bc120d34002bb2bf0ed8a54f3ef60173\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"program": "D:\\Games Repos\\ToonTanks\\Binaries\\Win64\\UE4-Win64-Test.exe",
 			"args": [
 			],
 			"cwd": "F:\\UE_4.27",
@@ -72,7 +72,7 @@
 			"preLaunchTask": "ToonTanksEditor Win64 Debug Build",
 			"program": "F:\\UE_4.27\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
 			"args": [
-				"D:\\Games Repos\\ToonTanks-76998434bc120d34002bb2bf0ed8a54f3ef60173\\ToonTanks.uproject"
+				"D:\\Games Repos\\ToonTanks\\ToonTanks.uproject"
 			],
 			"cwd": "F:\\UE_4.27",
 			"stopAtEntry": false,
@@ -86,7 +86,7 @@
 			"preLaunchTask": "ToonTanksEditor Win64 DebugGame Build",
 			"program": "F:\\UE_4.27\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
 			"args": [
-				"D:\\Games Repos\\ToonTanks-76998434bc120d34002bb2bf0ed8a54f3ef60173\\ToonTanks.uproject"
+				"D:\\Games Repos\\ToonTanks\\ToonTanks.uproject"
 			],
 			"cwd": "F:\\UE_4.27",
 			"stopAtEntry": false,
@@ -100,7 +100,7 @@
 			"preLaunchTask": "ToonTanksEditor Win64 Development Build",
 			"program": "F:\\UE_4.27\\Engine\\Binaries\\Win64\\UE4Editor.exe",
 			"args": [
-				"D:\\Games Repos\\ToonTanks-76998434bc120d34002bb2bf0ed8a54f3ef60173\\ToonTanks.uproject"
+				"D:\\Games Repos\\ToonTanks\\ToonTanks.uproject"
 			],
 			"cwd": "F:\\UE_4.27",
 			"stopAtEntry": false,
@@ -117,7 +117,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=D:\\Games Repos\\ToonTanks-76998434bc120d34002bb2bf0ed8a54f3ef60173\\ToonTanks.uproject",
+				"-project=D:\\Games Repos\\ToonTanks\\ToonTanks.uproject",
 				"-game",
 				"-engine"
 			],
