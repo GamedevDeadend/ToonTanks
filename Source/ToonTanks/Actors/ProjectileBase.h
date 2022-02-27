@@ -21,13 +21,19 @@ private:
 	UStaticMeshComponent *ProjectileMesh;
 
 	UPROPERTY( EditDefaultsOnly , Category = "Damage")
-	TSubclassOf<UDamageType>DamnageType;
-
-	UPROPERTY( EditAnywhere , BlueprintReadOnly , Category = "Damage", meta = (AllowPrivateAccess = "true"))
-	float ProjectileDamage = 1.0f;
+	TSubclassOf<UDamageType> DamnageType;
 
 	UPROPERTY( EditAnywhere , BlueprintReadOnly , Category = "Move", meta = (AllowPrivateAccess = "true"))
-	float ProjectileVelocity = 8.0f;
+	float ProjectileVelocity = 1300.0f;
+
+	UPROPERTY( EditAnywhere , BlueprintReadOnly , Category = "Damage", meta = (AllowPrivateAccess = "true"))
+	float ProjectileDamage = 50.0f;
+
+
+	UFUNCTION()
+		void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+
+
 
 	
 public:	

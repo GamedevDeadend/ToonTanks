@@ -21,7 +21,6 @@ APawnTank :: APawnTank()
 void APawnTank::BeginPlay()
 {
 	Super::BeginPlay();
-
 	PlayerControllerRef = Cast<APlayerController>(GetController());
 	
 }

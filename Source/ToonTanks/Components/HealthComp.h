@@ -1,0 +1,32 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Components/ActorComponent.h"
+#include "HealthComp.generated.h"
+
+class ATankGameModeBase;
+
+UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+class TOONTANKS_API UHealthComp : public UActorComponent
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere)
+	float DefaultHealth = 100.0f;
+	float Health = 0.0f;
+
+	ATankGameModeBase* GameModeRef;
+
+public:	
+	// Sets default values for this component's properties
+	UHealthComp();
+
+protected:
+	// Called when the game starts
+	virtual void BeginPlay() override;
+	UFUNCTION()
+	void TakeDamage(AActor* DamgaedActor, float Damage, const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCreator ); 
+		
+};

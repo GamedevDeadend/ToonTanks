@@ -10,6 +10,21 @@
 		"directory": "F:\\UE_4.27\\Engine\\Source"
 	},
 	{
+		"file": "D:\\\\Games Repos\\\\ToonTanks\\\\Source\\\\ToonTanks\\\\Actors\\\\tempCodeRunnerFile.h",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"D:\\Games Repos\\ToonTanks\\.vscode\\compileCommands_ToonTanks\\ToonTanks.210.rsp\"",
+		"directory": "F:\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Games Repos\\\\ToonTanks\\\\Source\\\\ToonTanks\\\\GameModes\\\\TankGameModeBase.cpp",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"D:\\Games Repos\\ToonTanks\\.vscode\\compileCommands_ToonTanks\\ToonTanks.210.rsp\"",
+		"directory": "F:\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Games Repos\\\\ToonTanks\\\\Source\\\\ToonTanks\\\\GameModes\\\\TankGameModeBase.h",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"D:\\Games Repos\\ToonTanks\\.vscode\\compileCommands_ToonTanks\\ToonTanks.210.rsp\"",
+		"directory": "F:\\UE_4.27\\Engine\\Source"
+	},
+	{
 		"file": "D:\\\\Games Repos\\\\ToonTanks\\\\Source\\\\ToonTanks\\\\Pawns\\\\PawnBase.cpp",
 		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"D:\\Games Repos\\ToonTanks\\.vscode\\compileCommands_ToonTanks\\ToonTanks.210.rsp\"",
 		"directory": "F:\\UE_4.27\\Engine\\Source"
