@@ -15,6 +15,7 @@ void AProjectileBase::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UP
 	if(OtherActor && OtherActor != this && OtherActor != MyOwner)
 	{
 		UGameplayStatics::ApplyDamage(OtherActor, ProjectileDamage, MyOwner->GetInstigatorController(), this, DamnageType);
+		//UE_LOG(LogTemp, Warning, TEXT("Damage Applied to %s"), *OtherActor->GetName());
 	}
 	//play a bunch of effects here during the polish phase - TODO
 	Destroy();

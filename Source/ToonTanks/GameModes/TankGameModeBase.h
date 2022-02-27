@@ -23,13 +23,15 @@ class TOONTANKS_API ATankGameModeBase : public AGameModeBase
 	int32 TargetTurrets = 0;
 
 	int32 GetTargetTurret();
+
+	public:
+
+	void ActorDied(AActor* DeadActor);
 	void HandleGameStart();
 	void HandleGameOver(bool PlayerWon);
 
-	public:
-	void ActorDied(AActor* DeadActor);
-
 	protected:
+
 	virtual void BeginPlay() override;
 	UFUNCTION(blueprintImplementableEvent)	
 	void GameStart();

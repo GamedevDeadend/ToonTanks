@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "ToonTanks/Components/HealthComp.h"
+#include "HealthComp.h"
 #include "ToonTanks/GameModes/TankGameModeBase.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -22,13 +22,14 @@ void UHealthComp::BeginPlay()
 	Super::BeginPlay();
 
 	Health = DefaultHealth;
-	GameModeRef = Cast<ATankGameModeBase>( UGameplayStatics :: GetGameMode(GetWorld()) ); 
+	GameModeRef = Cast<ATankGameModeBase>( UGameplayStatics :: GetGameMode( GetWorld() ) );
 	GetOwner()->OnTakeAnyDamage.AddDynamic(this, &UHealthComp::TakeDamage);
 }
 
 void UHealthComp::TakeDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser)
 {
-	if( Damage != 0 || Health <= 0 )
+	
+	if( Damage == 0 || Health <= 0)
 	{
 		return;
 	}
@@ -45,6 +46,7 @@ void UHealthComp::TakeDamage(AActor* DamagedActor, float Damage, const UDamageTy
 		else
 		{
 			UE_LOG(LogTemp, Warning, TEXT("Health Component Has No Reference to GameMode"));
+			
 		}
 	}
 

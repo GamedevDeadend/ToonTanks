@@ -15,6 +15,7 @@ void ATankGameModeBase :: ActorDied(AActor* DeadActor)
 {
     if (DeadActor == PlayerTank)
     {
+        UE_LOG(LogTemp, Warning, TEXT("Player Died"));
         PlayerTank->HandleDestruction();
         HandleGameOver(false);
     }
@@ -22,7 +23,7 @@ void ATankGameModeBase :: ActorDied(AActor* DeadActor)
     else if (APawnTurret* DestroyedTurret = Cast<APawnTurret>(DeadActor))
     {
         DestroyedTurret->HandleDestruction();
-        if (--TargetTurrets = 0)
+        if (--TargetTurrets == 0)
         {
             HandleGameOver(true);
         }
