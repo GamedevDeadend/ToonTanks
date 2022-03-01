@@ -47,7 +47,7 @@ void APawnBase::Fire()
 
 void APawnBase::HandleDestruction()
 {
-	Destroy();
+
 }
 
 

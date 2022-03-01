@@ -41,6 +41,7 @@ private:
 	void Rotate();
 
 	APlayerController *PlayerControllerRef;
+	bool bIsPlayerAlive = true;
 
 
 protected:
@@ -50,12 +51,13 @@ protected:
 public:	
 	
 	APawnTank();
-
+	bool CheckPlayerAlive();
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	virtual void HandleDestruction() override;
+
 	
 };

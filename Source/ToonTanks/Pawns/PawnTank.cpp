@@ -16,6 +16,11 @@ APawnTank :: APawnTank()
 
 }
 
+bool APawnTank::CheckPlayerAlive()
+{
+	return bIsPlayerAlive;
+}
+
 
 // Called when the game starts or when spawned
 void APawnTank::BeginPlay()
@@ -58,6 +63,11 @@ void APawnTank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 void APawnTank::HandleDestruction()
 {
 	Super::HandleDestruction();
+	 bIsPlayerAlive = false;
+
+	 SetActorHiddenInGame(true);
+	 SetActorTickEnabled(false);
+
 	// HidePlayer.TODO Handle This Feature
 }
 

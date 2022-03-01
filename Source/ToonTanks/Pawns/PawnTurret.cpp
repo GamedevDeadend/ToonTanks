@@ -20,7 +20,7 @@ void APawnTurret::HandleDestruction()
 {
 	// Call Base class Handle Destruction
 	Super :: HandleDestruction();
-	// Destroy();
+	Destroy();
 }
 
 // Called every frame
@@ -42,7 +42,7 @@ void APawnTurret::CheckFireCondition()
 		return;
 	}
 
-	if (ReturnDistanceToPlayer() <= FireRange)
+	if (ReturnDistanceToPlayer() <= FireRange && PlayerPawn->CheckPlayerAlive() == true) 
 	{
 		//Fire
 		Fire();
