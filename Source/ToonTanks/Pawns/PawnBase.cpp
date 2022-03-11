@@ -35,7 +35,6 @@ void APawnBase::RotateTurret(FVector LookAtTarget)
 
 	FRotator TurretRotation = FVector(LookatXY - StartLocation).Rotation();
 	TurretMesh->SetWorldRotation(TurretRotation);
-	
 }
 
 void APawnBase::Fire()
